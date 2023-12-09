@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Leaflet API for MAP-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <!--Leaflet API for MAP-->
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  </style>
+</head>
+<body>
+  <div class="template">
+    <div id="header">
+      <div id="title-text">IP Address Tracker</div>
+      <div id="search-container">
+          <input type="text" id="inputType" placeholder="Search for any IP address or domain">
+          <a href="#" id="entr-btn"></a>
+      </div>
+      <div class="info-temp">
+        <div class="lines-bg" id="line1"></div>
+        <div class="lines-bg" id="line2"></div>
+        <div class="lines-bg" id="line3"></div>
+        <div class="column c1">
+          <div class="c-title">IP ADDRESS</div>
+          <div class="output" id="c1-output">
+              <!---->
+          </div>
+        </div>
+
+        <div class="column c2">
+          <div class="c-title">LOCATION</div>
+          <div class="output" id="c2-output">
+           
+          </div>
+        </div>
+
+        <div class="column c3">
+          <div class="c-title">TIMEZONE</div>
+          <div class="output" id="c3-output">
+            <!---->
+          </div>
+        </div>
+
+        <div class="column c4">
+          <div class="c-title">ISP</div>
+          <div class="output" id="c4-output">
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+<script src="js.js"></script> 
+</body>
+</html>
+
+<!--
+  
+  IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC  (add offset value dynamically using the API)
+    ISP
+  
+-->

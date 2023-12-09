@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+:root{
+   --clr-vdg:hsl(0, 0%, 17%);
+   --clr-dg:hsl(0, 0%, 59%);
+   --clr-w:white;
+
+   --fs-n:18px;
+}
+/*For the MAP*/
+    #map { 
+        height: 70vh;
+        width: 100vw; 
+        z-index: 1;
+    }
+/*For the MAP*/
+
+.template{
+    background-color:transparent;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header{
+    width: 100vw;
+    height: 30vh;
+    position:relative;
+    background-image: url(images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 3;
+}
+
+#title-text{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:15%;
+    color:var(--clr-w);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#search-container{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:35%;
+    width: 500px;
+    background-color: white;
+    height: 60px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+#inputType{
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    background-color: transparent;
+    border: none;
+    width: 88%;
+    height: 100%;
+    left:0%;
+    font-size: 30px;
+    padding-left:50px;
+}
+
+#inputType::placeholder{
+    top:0;
+    padding-left:0;
+    font-size: 20px;
+}
+
+#entr-btn{
+    background-color: var(--clr-vdg);
+    position:absolute;
+    right:0;
+    width: 60px;
+    height: 100%;
+    background-image: url(images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.lines-bg{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:50%;
+    background-color: lightgrey;
+    width: 1px;
+    height: 100px;
+}
+
+#line2{
+    left:23%;
+}
+
+#line3{
+    left:77%;
+}
+
+.info-temp{
+    position:absolute;
+    left:50%;
+    top:70%;
+    transform: translateX(-50%);
+    width: 80vw;
+    height:20vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+    display:flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.column{
+    width: 300px;
+    background-color: transparent;
+    height: 100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.c-title{
+    color: var(--clr-dg);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 10%;
+}
+
+.output{
+    padding-left:10% ;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--clr-vdg);
+    background-color: transparent;
+    width: 250px;
+
+}
+
+
